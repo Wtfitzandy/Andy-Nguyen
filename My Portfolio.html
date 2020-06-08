@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+  </head>
+  <div id="welcome-section">
+    <h1>Andy Nguyen's Portfolio</h1>
+    <h2>For the Horde!!!</h2>
+  </div>
+  <h3>About me:</h3>
+  <section id="about-me">
+    <p>
+      Hello! My name is Andy Nguyen. I currently need to add random text in this
+      column so I know how to format it later. Please disregard everything that
+      I am about to say as it doesn't really have any relation as to what I want
+      to say in the future. I like dogs. I eat food because it makes me feel
+      good. What food you ask? Please give me a steak and some sushi. Mm...
+      Sushi. I haven't had sushi in ages. I like playing video games. My journey
+      in video games started when I got my first gaming console, the Super
+      Nintendo. Super Mario taught me the frustrations of falling into holes,
+      but it did teach how to avoid fires, fires like in the game World of
+      Warcraft. I need to add more text to this and I don't realy know what else
+      to say, but we're going to have it said. Oh I guess I could mention that I
+      live in Colorado. Aurora, Colorado to be exact. I live in the middle of no
+      where since we are as east in Aurora as we can go before we start hitting
+      farm land. We have tumbleweeds in my neighborhood! People that visit my
+      house are usually shocked because they think it's something they only see
+      in movies and cartoons. They really do exist! I'm currently watching Lord
+      of the Rings: Fellowship of the Ring because it's something easy on the
+      side and I don't have to have my fullest attention watching it. I am
+      probably going to watch the movie 300 tomorrow as I continue to work on
+      this thing which is currently testing my patience because it's starting to
+      piss me off, not doing what I want it to do. I only need one more line of
+      text so here we are.
+    </p>
+    <img
+      src="https://scontent.fapa1-1.fna.fbcdn.net/v/t31.0-8/19667723_1703339053014261_378245089609214926_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=t5thN3dlcFEAX9fWUHT&_nc_ht=scontent.fapa1-1.fna&oh=c591da12871962c9916fcffcc441bb7a&oe=5F04ED40"
+    />
+  </section>
+  <section id="projects">
+    <div class="project-tile">
+      <div id="box-1">Project One</div>
+      <div id="box-2">Project Two</div>
+      <div id="box-3">Project Three</div>
+      <div id="box-4">Project Four</div>
+    </div>
+  </section>
+  <navbar id="navbar"> </navbar>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #welcome-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-image: linear-gradient(
+        126deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 47%,
+        rgba(0, 212, 255, 1) 100%
+      );
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: 700;
+      width: 100%;
+      height: 100vh;
+      color: white;
+    }
+    p {
+      flex: 1 200px;
+      border: 1px solid;
+      text-align: left;
+      height: 100%;
+      max-width: 1200px;
+    }
+    img {
+      flex: 2;
+      min-width: 500px;
+      max-width: 600px;
+      border: 1px solid black;
+    }
+    #about-me {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      border: 1px solid red;
+      height: 100%;
+      min-width: 100vh;
+    }
+    h1 {
+      font-size: 6rem;
+    }
+
+    h2 {
+      font-size: 4.2rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    .project-tile {
+      padding: 30px;
+      align-content: center;
+      text-align: center;
+      line-height: 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 30px;
+      row-gap: 1em;
+      cursor: pointer;
+    }
+
+    #box-1 {
+      background: LightSkyBlue;
+    }
+    #box-2 {
+      background: LightSalmon;
+    }
+    #box-3 {
+      background: PaleTurquoise;
+    }
+    #box-4 {
+      background: firebrick;
+    }
+
+    html {
+      box-sizing: border-box;
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background-color: lightgrey;
+    }
+    @media (max-width: 75em) {
+      html {
+        font-size: 60%;
+      }
+    }
+    @media (max-width: 61.25em) {
+      html {
+        font-size: 58%;
+      }
+    }
+    @media (max-width: 28.75em) {
+      html {
+        font-size: 55%;
+      }
+    }
+  </style>
+</html>
